@@ -26,3 +26,9 @@ const max = 100
 
 let randomNumber = Math.floor(Math.random() * max - min) + min; // generate number between min and max
 console.log(randomNumber);
+
+let time = 16;
+let greeting = time <= 10 >= 0 ? "Good Morning" : time >= 10 ? "Good Day" : "Greeting";
+
+console.log(greeting);
+

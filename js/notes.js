@@ -19,3 +19,12 @@ document.getElementById("mySubmit").onclick = function() {
     username = document.getElementById("myText").value;
     document.getElementById("nameH1").textContent = username;
 }
+
+// some conditional statements
+if(age >= 20) {
+    console.log("Age above 20")
+} else {
+    console.log("Age below 20")
+}
+
+let message = age >= 18 ? "You're an adult" : "You are a minor";
