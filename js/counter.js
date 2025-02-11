@@ -18,3 +18,11 @@ resetBtn.onclick = function() {
     count = 0;
     countLabel.textContent = count;
 }
+
+// random number generator
+
+const min = 50;
+const max = 100
+
+let randomNumber = Math.floor(Math.random() * max - min) + min; // generate number between min and max
+console.log(randomNumber);
