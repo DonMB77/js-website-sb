@@ -1,21 +1,9 @@
-let fullName = "Full Name";
-let age = 25;
-let student = false;
+const PI = 3.14159;
+let radius;
+let circumference;
 
-//document.getElementById("p1").textContent = `My name is ${fullName}`;
-//document.getElementById("p2").textContent = `My age is ${age}`;
-//document.getElementById("p3").textContent = `I am a student: ${student}`;
+radius = window.prompt("Enter radius:");
+radius = Number(radius);
 
-// window prompt
-/*let username;
-
-username = window.prompt(`What's your username?`);
-console.log(username);
-*/
-
-// html textbox
-let username;
-document.getElementById("mySubmit").onclick = function() {
-    username = document.getElementById("myText").value;
-    document.getElementById("nameH1").textContent = username;
-}
+circumference = 2 * pi * radius;
+console.log(circumference);
