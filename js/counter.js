@@ -37,8 +37,11 @@ let day = "monday";
 switch (day) {
     case "monday":
         console.log("It is monday");
+        break;
     case "tuesday":
         console.log("It is tuesday");
+        break;
     default:
         console.log(day);
+        break;
 } 
