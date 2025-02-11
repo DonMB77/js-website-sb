@@ -4,17 +4,17 @@ const increaseBtn = document.getElementById("increaseBtn");
 const countLabel = document.getElementById("countLabel");
 let count = 0;
 
-increaseBtn.onclick = function() {
+increaseBtn.onclick = function () {
     count++;
     countLabel.textContent = count;
 }
 
-decreaseBtn.onclick = function() {
+decreaseBtn.onclick = function () {
     count--;
     countLabel.textContent = count;
 }
 
-resetBtn.onclick = function() {
+resetBtn.onclick = function () {
     count = 0;
     countLabel.textContent = count;
 }
@@ -32,3 +32,13 @@ let greeting = time <= 10 >= 0 ? "Good Morning" : time >= 10 ? "Good Day" : "Gre
 
 console.log(greeting);
 
+let day = "monday";
+
+switch (day) {
+    case "monday":
+        console.log("It is monday");
+    case "tuesday":
+        console.log("It is tuesday");
+    default:
+        console.log(day);
+} 
