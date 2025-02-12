@@ -28,3 +28,7 @@ if(age >= 20) {
 }
 
 let message = age >= 18 ? "You're an adult" : "You are a minor";
+
+let firstNameStatic = fullName.slice(0,4);
+// using index of for more dynamic execution
+let firstNameDynamic = fullName.slice(0, fullName.indexOf(" "))
