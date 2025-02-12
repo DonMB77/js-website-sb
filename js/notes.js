@@ -32,3 +32,11 @@ let message = age >= 18 ? "You're an adult" : "You are a minor";
 let firstNameStatic = fullName.slice(0,4);
 // using index of for more dynamic execution
 let firstNameDynamic = fullName.slice(0, fullName.indexOf(" "))
+
+// method chaining
+let usernameInput = window.prompt("Enter your username:");
+usernameInput = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+let extraChar = username.slice(1);
+extraChar = extraChar.toLowerCase();
