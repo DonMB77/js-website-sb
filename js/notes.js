@@ -35,8 +35,16 @@ let firstNameDynamic = fullName.slice(0, fullName.indexOf(" "))
 
 // method chaining
 let usernameInput = window.prompt("Enter your username:");
+
 usernameInput = username.trim();
 let letter = username.charAt(0);
 letter = letter.toUpperCase();
 let extraChar = username.slice(1);
 extraChar = extraChar.toLowerCase();
+usernameInput = letter + extraChar;
+console.log(username);
+
+// chaining:
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+console.log(username);
+
