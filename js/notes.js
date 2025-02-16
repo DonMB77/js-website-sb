@@ -168,5 +168,11 @@ const squares = numbers.map(function(element){
 // arrow functions:
 
 const helloFunction = function() {
-    console.log();
+    console.log("Hello");
 }
+
+const helloArrowFunction = (name) => {
+    confirm.log(`Hello ${name}`);
+}
+
+setTimeout(() => console.log("Hello"), 3000);
