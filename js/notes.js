@@ -115,3 +115,17 @@ function uppercaseStudents (element) {
 }
 
 const uppercaseStudents = students.map(uppercaseStudents);
+
+// filter()
+
+let numbersForFiltering = [1, 2, 3, 4, 5];
+
+let numbersAfterFiltering = numbersForFiltering.filter(isEven);
+
+function isEven(element) {
+    if (element % 2 === 0) {
+        return true;
+    } else {
+        false;
+    }
+}
