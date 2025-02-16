@@ -54,7 +54,11 @@ fruits.pop();
 
 // rest parameters:
 function openFridge(...foods) {
-    console.log(foods);
+    console.log(...foods);
+}
+
+function getFoods(...foods) {
+    return foods;
 }
 
 const food1 = "pizza";
@@ -63,3 +67,7 @@ const food3 = "hotdog";
 const food4 = "sushi";
 
 openFridge(food1, food2, food3, food4);
+
+const foods = getFoods(food1, food2, food3, food4);
+
+// callback
