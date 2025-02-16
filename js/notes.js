@@ -129,3 +129,28 @@ function isEven(element) {
         false;
     }
 }
+
+// reduce()
+
+const prices = [5, 7, 8, 2];
+
+function addValues(previous, next) {
+    return previous + next;
+}
+
+const total = prices.reduce(addValues);
+
+const grades = [75, 50, 90, 80, 65, 95];
+
+function getMaxGrade (prev, next) {
+    return Math.max(prev, next);
+}
+
+const highestGrade = grades.reduce(getMaxGrade);
+
+// function expressions:
+const hello = function() {
+    console.log("Hello");
+}
+
+hello();
