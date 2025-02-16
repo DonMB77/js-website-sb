@@ -71,3 +71,17 @@ openFridge(food1, food2, food3, food4);
 const foods = getFoods(food1, food2, food3, food4);
 
 // callback
+function hello(callback) {
+    setTimeout(function () {
+        console.log("Hello");
+    }, 3000);
+    console.log("Hello!");
+    callback();
+}
+
+function goodby() {
+    console.log("Goodbye!");
+}
+
+hello(goodby);
+
