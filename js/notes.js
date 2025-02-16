@@ -98,3 +98,20 @@ function doubleElements(element, index, array) {
 
 numbers.forEach(doubleElements);
 numbers.forEach(displayAllElements);
+
+// map()
+const numbersForMap = [1, 2, 3, 4, 5];
+
+const squares = numbers.map(square);
+
+function square(element) {
+    return Math.pow(element, 2);
+}
+
+const students = ["sponge", "bob"];
+
+function uppercaseStudents (element) {
+    return element.toUpperCase();
+}
+
+const uppercaseStudents = students.map(uppercaseStudents);
