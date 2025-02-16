@@ -48,3 +48,18 @@ console.log(username);
 username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 console.log(username);
 
+let fruits = ["apple", "orange", "banana"];
+fruits.push("cherry");
+fruits.pop();
+
+// rest parameters:
+function openFridge(...foods) {
+    console.log(foods);
+}
+
+const food1 = "pizza";
+const food2 = "hamburger";
+const food3 = "hotdog";
+const food4 = "sushi";
+
+openFridge(food1, food2, food3, food4);
