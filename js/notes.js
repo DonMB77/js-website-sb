@@ -88,12 +88,13 @@ hello(goodby);
 // forEach()
 let numbers = [1,2,3,4,5];
 
-numbers.forEach(displayAllElements)
-
 function displayAllElements(element) {
     console.log(element);
 }
 
-function doubleElements(element) {
-    return element*2;
+function doubleElements(element, index, array) {
+    array[index] = element * 2;
 }
+
+numbers.forEach(doubleElements);
+numbers.forEach(displayAllElements);
