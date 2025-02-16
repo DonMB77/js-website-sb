@@ -102,7 +102,7 @@ numbers.forEach(displayAllElements);
 // map()
 const numbersForMap = [1, 2, 3, 4, 5];
 
-const squares = numbers.map(square);
+const squaresForMap = numbers.map(square);
 
 function square(element) {
     return Math.pow(element, 2);
@@ -154,3 +154,13 @@ const hello = function() {
 }
 
 hello();
+
+setTimeout(function() {
+    console.log("Hello");
+}, 3000);
+
+let numbersForMapping = [1, 2, 3, 4, 5];
+
+const squares = numbers.map(function(element){
+    return Math.pow(element, 2);
+});
