@@ -164,3 +164,9 @@ let numbersForMapping = [1, 2, 3, 4, 5];
 const squares = numbers.map(function(element){
     return Math.pow(element, 2);
 });
+
+// arrow functions:
+
+const helloFunction = function() {
+    console.log();
+}
