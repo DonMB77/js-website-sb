@@ -15,13 +15,13 @@ console.log(username);
 
 // html textbox
 let username;
-document.getElementById("mySubmit").onclick = function() {
+document.getElementById("mySubmit").onclick = function () {
     username = document.getElementById("myText").value;
     document.getElementById("nameH1").textContent = username;
 }
 
 // some conditional statements
-if(age >= 20) {
+if (age >= 20) {
     console.log("Age above 20")
 } else {
     console.log("Age below 20")
@@ -29,7 +29,7 @@ if(age >= 20) {
 
 let message = age >= 18 ? "You're an adult" : "You are a minor";
 
-let firstNameStatic = fullName.slice(0,4);
+let firstNameStatic = fullName.slice(0, 4);
 // using index of for more dynamic execution
 let firstNameDynamic = fullName.slice(0, fullName.indexOf(" "))
 
@@ -86,7 +86,7 @@ function goodby() {
 hello(goodby);
 
 // forEach()
-let numbers = [1,2,3,4,5];
+let numbers = [1, 2, 3, 4, 5];
 
 function displayAllElements(element) {
     console.log(element);
@@ -110,7 +110,7 @@ function square(element) {
 
 const students = ["sponge", "bob"];
 
-function uppercaseStudents (element) {
+function uppercaseStudents(element) {
     return element.toUpperCase();
 }
 
@@ -142,32 +142,32 @@ const total = prices.reduce(addValues);
 
 const grades = [75, 50, 90, 80, 65, 95];
 
-function getMaxGrade (prev, next) {
+function getMaxGrade(prev, next) {
     return Math.max(prev, next);
 }
 
 const highestGrade = grades.reduce(getMaxGrade);
 
 // function expressions:
-const hello = function() {
+const hello = function () {
     console.log("Hello");
 }
 
 hello();
 
-setTimeout(function() {
+setTimeout(function () {
     console.log("Hello");
 }, 3000);
 
 let numbersForMapping = [1, 2, 3, 4, 5];
 
-const squares = numbers.map(function(element){
+const squares = numbers.map(function (element) {
     return Math.pow(element, 2);
 });
 
 // arrow functions:
 
-const helloFunction = function() {
+const helloFunction = function () {
     console.log("Hello");
 }
 
@@ -176,3 +176,14 @@ const helloArrowFunction = (name) => {
 }
 
 setTimeout(() => console.log("Hello"), 3000);
+
+// objects
+
+function person1(firstName, lastName, age, isEmployed) {
+    this.make = make,
+    this.lastName = lastName,
+    this.age = age,
+    this.isEmployed = isEmployed
+    this.sayHello = function () { console.log("Hi!") },
+    this.sayBye = function () { console.log("Goodbye!") }
+};
