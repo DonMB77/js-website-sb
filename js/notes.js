@@ -319,3 +319,24 @@ function displayPerson({firstNameDisplay, lastNameDisplay, ageDisplay, jobDispla
 }
 
 displayPerson(person1);
+
+// nested objects
+
+const personObj = {
+    fullName: "Name",
+    age: 30,
+    isStudent: true,
+    hobbies: ["karate", "chess", "cooking"],
+    address: {
+        street: "example street 13",
+        city: "Munich",
+        country: "Germany"
+    }
+}
+
+console.log(personObj.fullName);
+console.log(personObj.address.street);
+
+for (const property in personObj.address) {
+    console.log(personObj.address[property]);
+}
