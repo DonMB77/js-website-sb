@@ -274,3 +274,48 @@ rectangle.widht = 5;
 rectangle.height = 6;
 
 console.log(rectangle.area);
+
+// destructuring
+
+// swap value of two variables
+
+let a = 1;
+let b = 2;
+
+[a, b] = [b, a];
+
+// swap 2 elements in array
+
+const colors = ["red", "green", "blue", "black", "white"];
+
+[colors[0], colors[4]] = [colors[4], colors[0]];
+
+// assign array elements to variables
+
+const [firstColor, secondColor, thirdColor, ...restColorsArray] = colors;
+
+// extract values form objects
+
+const person2 = {
+    firstName: "Spongebob",
+    lastName: "SquarePants",
+    age: 30,
+    job: "Fry Cook"
+}
+
+const person3 = {
+    firstName: "Patrick",
+    lastName: "Star",
+    age: 34,
+}
+
+const {firstNameP2, lastNameP2, agePersonP2, jobP2} = person2;
+const {firstNameP3, lastNameP3, agePersonP3, jobP3="Unemployed"} = person3;
+
+// destructure in function parameters
+
+function displayPerson({firstNameDisplay, lastNameDisplay, ageDisplay, jobDisplay}) {
+    console.log("displayPerson");
+}
+
+displayPerson(person1);
