@@ -208,6 +208,10 @@ const product1 = new Product("Shirt", 19.99);
 class Animal {
     alive = true;
 
+    constructor() {
+
+    }
+
     eat() {
         console.log(`This ${this.name} is eating`);
 
@@ -215,9 +219,12 @@ class Animal {
 }
 
 class Rabbit extends Animal {
-    static name = "Rabbit";
+    constructor(name) {
+        super();
+        this.name = name;
+    }
 }
 
-const rabbit1 = new Rabbit();
+const rabbit1 = new Rabbit("Rabbit");
 
 Rabbit.eat();
