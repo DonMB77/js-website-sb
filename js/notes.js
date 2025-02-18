@@ -434,3 +434,17 @@ const counter = createCounter();
 counter.increment();
 
 console.log(`The current count is ${counter.getCount()}`);
+
+// setTimeout()
+
+function sayHelloDelayed() {
+    window.alert("Hello");
+}
+
+setTimeout(sayHelloDelayed, 3000);
+
+setTimeout(function() {
+    window.alert("Hello"), 3000
+});
+
+setTimeout(() => window.alert("Hello"), 3000);
