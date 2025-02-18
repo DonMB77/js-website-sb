@@ -340,3 +340,21 @@ console.log(personObj.address.street);
 for (const property in personObj.address) {
     console.log(personObj.address[property]);
 }
+
+// Arrays of Objects
+
+const fruitsArray = [
+    {name: "apple", color: "red", calories: 95},
+    {name: "orange", color: "orange", calories: 45},
+    {name: "banana", color: "yellow", calories: 105},
+    {name: "coconut", color: "white", calories: 159},
+    {name: "pineapple", color: "yellow", calories: 37}]
+    
+console.log(fruits[0].name);
+
+fruitsArray.push({name: "grapes", color: "purple", calories: 62});
+
+fruits.forEach(fruit => console.log(fruit.name));
+const fruitNames = fruitsArray.map(fruit => fruit.name);
+
+const fruitsBelow100Calories = fruitsArray.filter(fruit => fruit.calories < 100);
