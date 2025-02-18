@@ -397,3 +397,40 @@ const date = new Date(); // current date
 
 const year = date.getFullYear();
 const month = date.getMonth(); // 0 indexed (jan = 0)
+
+
+// closures
+
+function outer() {
+
+let message = "Hello"; // encapsulated and thus private
+
+    function inner() {
+        console.log(message);
+    }
+
+    inner();
+}
+
+outer();
+
+// state maintenance
+function createCounter() {
+    function increment() {
+        let count = 0;
+        count++;
+        console.log(`Count increased to ${count}`);
+    }
+
+    function getCount(){
+        return count;
+    }
+
+    return {increment, getCount};
+}
+
+const counter = createCounter();
+
+counter.increment();
+
+console.log(`The current count is ${counter.getCount()}`);
