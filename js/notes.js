@@ -202,3 +202,22 @@ class Product{
 }
 
 const product1 = new Product("Shirt", 19.99);
+
+// Inheritance
+
+class Animal {
+    alive = true;
+
+    eat() {
+        console.log(`This ${this.name} is eating`);
+
+    }
+}
+
+class Rabbit extends Animal {
+    static name = "Rabbit";
+}
+
+const rabbit1 = new Rabbit();
+
+Rabbit.eat();
