@@ -228,3 +228,49 @@ class Rabbit extends Animal {
 const rabbit1 = new Rabbit("Rabbit");
 
 Rabbit.eat();
+
+// getters and setters
+class Rectangle {
+
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth){
+        if(newWidth > 0) {
+            this._width = newWidth;
+        }
+        else {
+            console.error("Widht must be a positive number");
+        }
+    }
+
+    set height(newHeight){
+        if(newHeight > 0) {
+            this._height = newHeight;
+        }
+        else {
+            console.error("Height must be a positive number");
+        }
+    }
+
+    get widht(){
+        return this._width.toFixed(1);
+    }
+
+    get height(){
+        return this._height.toFixed(1);
+    }
+
+    get area() {
+        return (this._width * this._height).toFixed(1);
+    }
+}
+
+const rectangle = Rectangle(3, 4);
+
+rectangle.widht = 5;
+rectangle.height = 6;
+
+console.log(rectangle.area);
