@@ -358,3 +358,20 @@ fruits.forEach(fruit => console.log(fruit.name));
 const fruitNames = fruitsArray.map(fruit => fruit.name);
 
 const fruitsBelow100Calories = fruitsArray.filter(fruit => fruit.calories < 100);
+
+// sort()
+
+const fruitsArrayToBeSorted = [
+    {name: "apple", color: "red", calories: 95},
+    {name: "orange", color: "orange", calories: 45},
+    {name: "banana", color: "yellow", calories: 105},
+    {name: "coconut", color: "white", calories: 159},
+    {name: "pineapple", color: "yellow", calories: 37}]
+
+let numbersToBeSorted = [1, 10, 2, 9, 3, 8, 4, 7, 5, 6];
+
+numbers.sort((a, b) => a - b);
+
+people.sort((a, b) => a.calories - b.calories);
+
+people.sort((a, b) => a.name.localCompare(b.name));
