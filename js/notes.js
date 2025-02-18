@@ -389,3 +389,11 @@ function shuffle(array) {
 }
 
 shuffle(cards);
+
+// Dates
+
+// Date(year, month, day, hour, minute, second, ms)
+const date = new Date(); // current date
+
+const year = date.getFullYear();
+const month = date.getMonth(); // 0 indexed (jan = 0)
