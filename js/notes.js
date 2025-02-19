@@ -452,3 +452,18 @@ setTimeout(() => window.alert("Hello"), 3000);
 const timeoutId = setTimeout(() => window.alert("Hello"), 3000);
 
 clearTimeout(timeoutId);
+
+// some async examples:
+
+function func1(callback) {
+    setTimeout(() => {
+        console.log("Task 1");
+        callback();
+    }, 3000);
+}
+
+function func2() {
+    console.log("Task 2");
+}
+
+func1(func2);
