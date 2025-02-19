@@ -448,3 +448,7 @@ setTimeout(function() {
 });
 
 setTimeout(() => window.alert("Hello"), 3000);
+
+const timeoutId = setTimeout(() => window.alert("Hello"), 3000);
+
+clearTimeout(timeoutId);

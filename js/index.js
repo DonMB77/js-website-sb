@@ -1,9 +1,12 @@
-const PI = 3.14159;
-let radius;
-let circumference;
+import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
-radius = window.prompt("Enter radius:");
-radius = Number(radius);
+console.log(PI);
 
-circumference = 2 * pi * radius;
+const circumference = getCircumference(10);
 console.log(circumference);
+
+const area = getArea(10);
+console.log(area);
+
+const volume = getVolume(10);
+console.log(volume);
